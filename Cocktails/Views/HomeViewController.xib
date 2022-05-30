@@ -38,7 +38,7 @@
                 <constraint firstItem="dUv-cR-IJC" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" constant="10" id="jb6-u7-f0I"/>
                 <constraint firstItem="dUv-cR-IJC" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="mJ1-c2-7g1"/>
             </constraints>
-            <point key="canvasLocation" x="70" y="45"/>
+            <point key="canvasLocation" x="294" y="4"/>
         </view>
     </objects>
     <resources>

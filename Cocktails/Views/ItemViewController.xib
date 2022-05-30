@@ -105,7 +105,7 @@
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="lcd-TH-Srw" secondAttribute="bottom" constant="20" id="tUw-AF-FT6"/>
                 <constraint firstItem="lcd-TH-Srw" firstAttribute="top" secondItem="VDK-1j-6lj" secondAttribute="bottom" constant="5" id="thH-yX-5Eq"/>
             </constraints>
-            <point key="canvasLocation" x="-490" y="185"/>
+            <point key="canvasLocation" x="-758" y="179"/>
         </view>
     </objects>
     <resources>

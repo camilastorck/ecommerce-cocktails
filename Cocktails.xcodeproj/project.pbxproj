@@ -23,6 +23,10 @@
 		18C24A9A2842CA4300373FB9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C24A992842CA4300373FB9 /* Constants.swift */; };
 		18C24A9D2842D05D00373FB9 /* ItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C24A9B2842D05D00373FB9 /* ItemViewController.swift */; };
 		18C24A9E2842D05D00373FB9 /* ItemViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18C24A9C2842D05D00373FB9 /* ItemViewController.xib */; };
+		18C24AA128440E2500373FB9 /* FormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C24A9F28440E2500373FB9 /* FormViewController.swift */; };
+		18C24AA228440E2500373FB9 /* FormViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18C24AA028440E2500373FB9 /* FormViewController.xib */; };
+		18C24AA428441F0000373FB9 /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C24AA328441F0000373FB9 /* ItemModel.swift */; };
+		18C24AA6284437FB00373FB9 /* NotificationsAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C24AA5284437FB00373FB9 /* NotificationsAction.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +67,11 @@
 		18C24A992842CA4300373FB9 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		18C24A9B2842D05D00373FB9 /* ItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViewController.swift; sourceTree = "<group>"; };
 		18C24A9C2842D05D00373FB9 /* ItemViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemViewController.xib; sourceTree = "<group>"; };
+		18C24A9F28440E2500373FB9 /* FormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewController.swift; sourceTree = "<group>"; };
+		18C24AA028440E2500373FB9 /* FormViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FormViewController.xib; sourceTree = "<group>"; };
+		18C24AA328441F0000373FB9 /* ItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
+		18C24AA5284437FB00373FB9 /* NotificationsAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsAction.swift; sourceTree = "<group>"; };
+		18C24AA7284445E700373FB9 /* Items.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Items.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +156,7 @@
 				18C24A9C2842D05D00373FB9 /* ItemViewController.xib */,
 				18C24A9228426F9D00373FB9 /* ItemCell.xib */,
 				18C24A6628426B8900373FB9 /* LaunchScreen.storyboard */,
+				18C24AA028440E2500373FB9 /* FormViewController.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -154,9 +164,13 @@
 		18C24A8E28426F3000373FB9 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				18C24A6428426B8900373FB9 /* Assets.xcassets */,
+				18C24A8B28426C7F00373FB9 /* APIManager.swift */,
+				18C24A992842CA4300373FB9 /* Constants.swift */,
+				18C24AA5284437FB00373FB9 /* NotificationsAction.swift */,
 				18C24A5828426B8700373FB9 /* AppDelegate.swift */,
 				18C24A5A28426B8700373FB9 /* SceneDelegate.swift */,
+				18C24AA7284445E700373FB9 /* Items.json */,
+				18C24A6428426B8900373FB9 /* Assets.xcassets */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -167,6 +181,7 @@
 				18C24A9128426F9D00373FB9 /* ItemCell.swift */,
 				18C24A952842725F00373FB9 /* HomeViewController.swift */,
 				18C24A9B2842D05D00373FB9 /* ItemViewController.swift */,
+				18C24A9F28440E2500373FB9 /* FormViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -174,8 +189,7 @@
 		18C24A9028426F4900373FB9 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				18C24A8B28426C7F00373FB9 /* APIManager.swift */,
-				18C24A992842CA4300373FB9 /* Constants.swift */,
+				18C24AA328441F0000373FB9 /* ItemModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -288,6 +302,7 @@
 				18C24A6528426B8900373FB9 /* Assets.xcassets in Resources */,
 				18C24A9E2842D05D00373FB9 /* ItemViewController.xib in Resources */,
 				18C24A9428426F9D00373FB9 /* ItemCell.xib in Resources */,
+				18C24AA228440E2500373FB9 /* FormViewController.xib in Resources */,
 				18C24A982842725F00373FB9 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -313,12 +328,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18C24AA428441F0000373FB9 /* ItemModel.swift in Sources */,
+				18C24AA128440E2500373FB9 /* FormViewController.swift in Sources */,
 				18C24A5928426B8700373FB9 /* AppDelegate.swift in Sources */,
 				18C24A9D2842D05D00373FB9 /* ItemViewController.swift in Sources */,
 				18C24A9328426F9D00373FB9 /* ItemCell.swift in Sources */,
 				18C24A8C28426C7F00373FB9 /* APIManager.swift in Sources */,
 				18C24A5B28426B8700373FB9 /* SceneDelegate.swift in Sources */,
 				18C24A9A2842CA4300373FB9 /* Constants.swift in Sources */,
+				18C24AA6284437FB00373FB9 /* NotificationsAction.swift in Sources */,
 				18C24A6328426B8700373FB9 /* Cocktails.xcdatamodeld in Sources */,
 				18C24A972842725F00373FB9 /* HomeViewController.swift in Sources */,
 			);

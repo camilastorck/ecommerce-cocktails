@@ -12,18 +12,13 @@ class ItemCell: UICollectionViewCell {
     @IBOutlet weak var itemImage: UIImageView!
     @IBOutlet weak var itemTitle: UILabel!
     @IBOutlet weak var itemSubtitle: UILabel!
-    @IBOutlet weak var addButton: UIButton!
+    @IBOutlet weak var itemPrice: UILabel!
     
     static let identifier = "itemCell"
-    
+        
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        addButton.layer.cornerRadius = 17
-        
     }
 
-    @IBAction func addItemToCart(_ sender: UIButton) {
-        
-    }
 }

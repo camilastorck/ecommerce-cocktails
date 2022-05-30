@@ -1,0 +1,50 @@
+[
+    {
+        "title": "Margarita",
+        "description": "Classic and refreshing virgin cocktail that can be made in 10 minutes. It’s made from only 5 ingredients.",
+        "price": 19.8,
+        "image": "margarita"
+    },
+    {
+        "title": "Pink Señorita",
+        "description": "Like a margarita with a softer, cuter side, the Señorita ditches limes for pink lemonade and lemon juice.",
+        "price": 20.5,
+        "image": "señorita"
+    },
+    {
+        "title": "Gin and Tonic",
+        "description": "This drink is made with lime juice, gin, tonic, and a little cucumber. It’s super refreshing and full of flavor!",
+        "price": 11.5,
+        "image": "gintonic"
+    },
+    {
+        "title": "RoseMary Grapefruit",
+        "description": "It’s a light drink, and it works for brunch or dinner time sipping. The herbal notes of the rosemary mix so well with the citrusy burst of grapefruit and soda.",
+        "price": 14.0,
+        "image": "rosemary"
+    },
+    {
+        "title": "Maracujá Mojito",
+        "description": "Refreshing cocktail that combines tropical fruits with lime and mint for perfect drink for hot summer nights.",
+        "price": 12.0,
+        "image": "mojito"
+    },
+    {
+        "title": "PassionFruit Paloma",
+        "description": "t is a tequila-based cocktail that is traditionally mixed with fresh lime juice, and a grapefruit-flavored soda.",
+        "price": 18.5,
+        "image": "paloma"
+    },
+    {
+        "title": "Sparkling Strawberry Sangria",
+        "description": "This drink has 5 ingredients and is the perfect cocktail to serve at all your parties! Light and refreshing!",
+        "price": 12.0,
+        "image": "sangria"
+    },
+    {
+        "title": "Tropical Rosé Aperol Spritz Cocktail",
+        "description": "Its light, refreshing, delicious and perfect for hot summer afternoons.",
+        "price": 19.5,
+        "image": "rose"
+    }
+]
