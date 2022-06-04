@@ -14,4 +14,6 @@ struct Item: Decodable {
     let price: Double
     let image: String
     
+    static let placeholder = Item(title: "", description: "", price: 0.0, image: "")
+    
 }

@@ -19,6 +19,7 @@ class ItemCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
+        itemImage.layer.cornerRadius = 10
     }
 
 }

@@ -6,21 +6,15 @@
 //
 
 import UIKit
+import Combine
 
 class HomeViewController: UIViewController {
-
+    
     @IBOutlet weak var collectionView: UICollectionView!
-    var items: [Item] = [
-        Item(title: "Margarita", description: "Ladfghjkjhgf ddfghjkkjhg", price: 10.50, image: "house.fill"),
-        Item(title: "Vodka", description: "Ladfghjkjhgf ddfghjkkjhg", price: 10.50, image: "house.fill"),
-        Item(title: "Cerveza", description: "Ladfghjkjhgf ddfghjkkjhg", price: 10.50, image: "house.fill"),
-        Item(title: "Vino", description: "Ladfghjkjhgf ddfghjkkjhg", price: 10.50, image: "house.fill")
-    ]
+    private let vm: ItemsViewModel
     
-    private let notifications: NotificationActions
-    
-    init(notifications: NotificationActions) {
-        self.notifications = notifications
+    init(viewModel: ItemsViewModel) {
+        self.vm = viewModel
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -30,13 +24,22 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         title = "Cocktails"
+        navigationItem.hidesBackButton = true
         collectionView.register(UINib(nibName: "ItemCell", bundle: nil), forCellWithReuseIdentifier: ItemCell.identifier)
+        
+        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "cart.fill"), style: .plain, target: self, action: #selector(showCart))
+        
         collectionView.collectionViewLayout = createLayout()
         collectionView.delegate = self
         collectionView.dataSource = self
     }
-
+    
+    @objc private func showCart() {
+        let cartVC = CartViewController(cart: CartViewModel())
+        present(cartVC, animated: true)
+    }
 }
 
 extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSource {
@@ -53,23 +56,24 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return items.count
+        return vm.items.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ItemCell.identifier, for: indexPath) as! ItemCell
-        cell.itemImage.image = UIImage(systemName: items[indexPath.row].image)
-        cell.itemTitle.text = items[indexPath.row].title
-        cell.itemSubtitle.text = items[indexPath.row].description
-        cell.itemPrice.text = "\(items[indexPath.row].price)"
+        let image = vm.items[indexPath.row].image
+        cell.itemImage.image = UIImage(named: image)
+        cell.itemTitle.text = vm.items[indexPath.row].title
+        cell.itemSubtitle.text = vm.items[indexPath.row].description
+        cell.itemPrice.text = "\(vm.items[indexPath.row].price)"
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
-        let itemSelected = items[indexPath.row]
-        notifications.action.send(itemSelected)
-        navigationController?.pushViewController(ItemViewController(notifications: NotificationActions()), animated: true)
+        let itemSelected = vm.items[indexPath.row]
+        let VC = ItemViewController(item: itemSelected, viewModel: ItemsViewModel(), cart: CartViewModel())
+        navigationController?.pushViewController(VC, animated: true)
     }
     
 }
+

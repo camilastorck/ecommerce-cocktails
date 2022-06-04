@@ -7,15 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		184B9341284981DE00D07E61 /* CartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184B9340284981DE00D07E61 /* CartViewModel.swift */; };
+		184B93442849874A00D07E61 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184B93422849874A00D07E61 /* CartViewController.swift */; };
+		184B93452849874A00D07E61 /* CartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 184B93432849874A00D07E61 /* CartViewController.xib */; };
+		184B93482849889C00D07E61 /* CartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184B93462849889C00D07E61 /* CartTableViewCell.swift */; };
+		184B93492849889C00D07E61 /* CartTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 184B93472849889C00D07E61 /* CartTableViewCell.xib */; };
 		18C24A5928426B8700373FB9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C24A5828426B8700373FB9 /* AppDelegate.swift */; };
 		18C24A5B28426B8700373FB9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C24A5A28426B8700373FB9 /* SceneDelegate.swift */; };
-		18C24A6328426B8700373FB9 /* Cocktails.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 18C24A6128426B8700373FB9 /* Cocktails.xcdatamodeld */; };
 		18C24A6528426B8900373FB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18C24A6428426B8900373FB9 /* Assets.xcassets */; };
 		18C24A6828426B8900373FB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18C24A6628426B8900373FB9 /* LaunchScreen.storyboard */; };
 		18C24A7328426B8900373FB9 /* CocktailsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C24A7228426B8900373FB9 /* CocktailsTests.swift */; };
 		18C24A7D28426B8900373FB9 /* CocktailsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C24A7C28426B8900373FB9 /* CocktailsUITests.swift */; };
 		18C24A7F28426B8900373FB9 /* CocktailsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C24A7E28426B8900373FB9 /* CocktailsUITestsLaunchTests.swift */; };
-		18C24A8C28426C7F00373FB9 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C24A8B28426C7F00373FB9 /* APIManager.swift */; };
 		18C24A9328426F9D00373FB9 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C24A9128426F9D00373FB9 /* ItemCell.swift */; };
 		18C24A9428426F9D00373FB9 /* ItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18C24A9228426F9D00373FB9 /* ItemCell.xib */; };
 		18C24A972842725F00373FB9 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C24A952842725F00373FB9 /* HomeViewController.swift */; };
@@ -26,7 +29,8 @@
 		18C24AA128440E2500373FB9 /* FormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C24A9F28440E2500373FB9 /* FormViewController.swift */; };
 		18C24AA228440E2500373FB9 /* FormViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18C24AA028440E2500373FB9 /* FormViewController.xib */; };
 		18C24AA428441F0000373FB9 /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C24AA328441F0000373FB9 /* ItemModel.swift */; };
-		18C24AA6284437FB00373FB9 /* NotificationsAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C24AA5284437FB00373FB9 /* NotificationsAction.swift */; };
+		18DE73312846EA400023C4C7 /* ItemsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DE73302846EA400023C4C7 /* ItemsViewModel.swift */; };
+		18DE73342847081C0023C4C7 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DE73332847081C0023C4C7 /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,10 +51,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		184B9340284981DE00D07E61 /* CartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewModel.swift; sourceTree = "<group>"; };
+		184B93422849874A00D07E61 /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
+		184B93432849874A00D07E61 /* CartViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CartViewController.xib; sourceTree = "<group>"; };
+		184B93462849889C00D07E61 /* CartTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartTableViewCell.swift; sourceTree = "<group>"; };
+		184B93472849889C00D07E61 /* CartTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CartTableViewCell.xib; sourceTree = "<group>"; };
 		18C24A5528426B8700373FB9 /* Cocktails.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cocktails.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18C24A5828426B8700373FB9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18C24A5A28426B8700373FB9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		18C24A6228426B8700373FB9 /* Cocktails.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Cocktails.xcdatamodel; sourceTree = "<group>"; };
 		18C24A6428426B8900373FB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18C24A6728426B8900373FB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18C24A6928426B8900373FB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -59,7 +67,6 @@
 		18C24A7828426B8900373FB9 /* CocktailsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CocktailsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18C24A7C28426B8900373FB9 /* CocktailsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocktailsUITests.swift; sourceTree = "<group>"; };
 		18C24A7E28426B8900373FB9 /* CocktailsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocktailsUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		18C24A8B28426C7F00373FB9 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		18C24A9128426F9D00373FB9 /* ItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
 		18C24A9228426F9D00373FB9 /* ItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemCell.xib; sourceTree = "<group>"; };
 		18C24A952842725F00373FB9 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -70,8 +77,9 @@
 		18C24A9F28440E2500373FB9 /* FormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewController.swift; sourceTree = "<group>"; };
 		18C24AA028440E2500373FB9 /* FormViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FormViewController.xib; sourceTree = "<group>"; };
 		18C24AA328441F0000373FB9 /* ItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
-		18C24AA5284437FB00373FB9 /* NotificationsAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsAction.swift; sourceTree = "<group>"; };
 		18C24AA7284445E700373FB9 /* Items.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Items.json; sourceTree = "<group>"; };
+		18DE73302846EA400023C4C7 /* ItemsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsViewModel.swift; sourceTree = "<group>"; };
+		18DE73332847081C0023C4C7 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,11 +131,11 @@
 			isa = PBXGroup;
 			children = (
 				18C24A8F28426F3E00373FB9 /* Controllers */,
+				18DE73322846EA450023C4C7 /* ViewModels */,
 				18C24A8D28426F1E00373FB9 /* Views */,
 				18C24A9028426F4900373FB9 /* Models */,
 				18C24A8E28426F3000373FB9 /* Resources */,
 				18C24A6928426B8900373FB9 /* Info.plist */,
-				18C24A6128426B8700373FB9 /* Cocktails.xcdatamodeld */,
 			);
 			path = Cocktails;
 			sourceTree = "<group>";
@@ -157,6 +165,8 @@
 				18C24A9228426F9D00373FB9 /* ItemCell.xib */,
 				18C24A6628426B8900373FB9 /* LaunchScreen.storyboard */,
 				18C24AA028440E2500373FB9 /* FormViewController.xib */,
+				184B93432849874A00D07E61 /* CartViewController.xib */,
+				184B93472849889C00D07E61 /* CartTableViewCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -164,9 +174,7 @@
 		18C24A8E28426F3000373FB9 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				18C24A8B28426C7F00373FB9 /* APIManager.swift */,
 				18C24A992842CA4300373FB9 /* Constants.swift */,
-				18C24AA5284437FB00373FB9 /* NotificationsAction.swift */,
 				18C24A5828426B8700373FB9 /* AppDelegate.swift */,
 				18C24A5A28426B8700373FB9 /* SceneDelegate.swift */,
 				18C24AA7284445E700373FB9 /* Items.json */,
@@ -181,6 +189,8 @@
 				18C24A9128426F9D00373FB9 /* ItemCell.swift */,
 				18C24A952842725F00373FB9 /* HomeViewController.swift */,
 				18C24A9B2842D05D00373FB9 /* ItemViewController.swift */,
+				184B93462849889C00D07E61 /* CartTableViewCell.swift */,
+				184B93422849874A00D07E61 /* CartViewController.swift */,
 				18C24A9F28440E2500373FB9 /* FormViewController.swift */,
 			);
 			path = Controllers;
@@ -190,8 +200,18 @@
 			isa = PBXGroup;
 			children = (
 				18C24AA328441F0000373FB9 /* ItemModel.swift */,
+				18DE73332847081C0023C4C7 /* NetworkManager.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		18DE73322846EA450023C4C7 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				18DE73302846EA400023C4C7 /* ItemsViewModel.swift */,
+				184B9340284981DE00D07E61 /* CartViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -301,8 +321,10 @@
 				18C24A6828426B8900373FB9 /* LaunchScreen.storyboard in Resources */,
 				18C24A6528426B8900373FB9 /* Assets.xcassets in Resources */,
 				18C24A9E2842D05D00373FB9 /* ItemViewController.xib in Resources */,
+				184B93492849889C00D07E61 /* CartTableViewCell.xib in Resources */,
 				18C24A9428426F9D00373FB9 /* ItemCell.xib in Resources */,
 				18C24AA228440E2500373FB9 /* FormViewController.xib in Resources */,
+				184B93452849874A00D07E61 /* CartViewController.xib in Resources */,
 				18C24A982842725F00373FB9 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -332,12 +354,14 @@
 				18C24AA128440E2500373FB9 /* FormViewController.swift in Sources */,
 				18C24A5928426B8700373FB9 /* AppDelegate.swift in Sources */,
 				18C24A9D2842D05D00373FB9 /* ItemViewController.swift in Sources */,
+				18DE73342847081C0023C4C7 /* NetworkManager.swift in Sources */,
 				18C24A9328426F9D00373FB9 /* ItemCell.swift in Sources */,
-				18C24A8C28426C7F00373FB9 /* APIManager.swift in Sources */,
+				184B93442849874A00D07E61 /* CartViewController.swift in Sources */,
+				184B93482849889C00D07E61 /* CartTableViewCell.swift in Sources */,
+				18DE73312846EA400023C4C7 /* ItemsViewModel.swift in Sources */,
+				184B9341284981DE00D07E61 /* CartViewModel.swift in Sources */,
 				18C24A5B28426B8700373FB9 /* SceneDelegate.swift in Sources */,
 				18C24A9A2842CA4300373FB9 /* Constants.swift in Sources */,
-				18C24AA6284437FB00373FB9 /* NotificationsAction.swift in Sources */,
-				18C24A6328426B8700373FB9 /* Cocktails.xcdatamodeld in Sources */,
 				18C24A972842725F00373FB9 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -672,19 +696,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		18C24A6128426B8700373FB9 /* Cocktails.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				18C24A6228426B8700373FB9 /* Cocktails.xcdatamodel */,
-			);
-			currentVersion = 18C24A6228426B8700373FB9 /* Cocktails.xcdatamodel */;
-			path = Cocktails.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 18C24A4D28426B8700373FB9 /* Project object */;
 }

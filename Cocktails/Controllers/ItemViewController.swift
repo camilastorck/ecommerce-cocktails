@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Combine
 
 class ItemViewController: UIViewController {
 
@@ -15,11 +16,14 @@ class ItemViewController: UIViewController {
     @IBOutlet weak var itemPrice: UILabel!
     @IBOutlet weak var addToCartOutlet: UIButton!
     
-    private let notifications: NotificationActions
+    private let vm: ItemsViewModel
+    private let cart: CartViewModel
+    let item: Item
     
-    init(notifications: NotificationActions) {
-        self.notifications = notifications
-        
+    init(item: Item, viewModel: ItemsViewModel, cart: CartViewModel) {
+        self.item = item
+        self.vm = viewModel
+        self.cart = cart
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -32,20 +36,28 @@ class ItemViewController: UIViewController {
         
         itemImage.layer.cornerRadius = 20
         addToCartOutlet.layer.cornerRadius = 10
-        setUpItemInformation()
+        
+        itemImage.image = UIImage(named: item.image)
+        itemTitle.text = item.title
+        itemDescription.text = item.description
+        itemPrice.text = "\(item.price)"
     }
 
     @IBAction func addToCartButton(_ sender: UIButton) {
+        cart.itemsInCart.append(item)
+        print(cart.itemsInCart)
+        showAlert()
+    }
+    
+    @IBAction func goToHomeController(_ sender: UIButton) {
         
     }
     
-    private func setUpItemInformation() {
-        notifications.action.sink { item in
-            self.itemTitle.text = item.title
-            self.itemDescription.text = item.description
-            self.itemPrice.text = "\(item.price)"
-            self.itemImage.image = UIImage(systemName: item.image)
-        }
-        .store(in: &notifications.cancellables)
+    private func showAlert() {
+        let alert = UIAlertController(title: "Listo!", message: "\(item.title) agregado al carrito.", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: .cancel, handler: { _ in
+            
+        }))
+        present(alert, animated: true)
     }
 }
